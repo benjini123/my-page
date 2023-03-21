@@ -313,6 +313,7 @@ position: relative;
   border: 3px solid transparent;
   border-radius: 100px;
   background-color: #E85A4F;
+  color: white;
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -329,8 +330,6 @@ position: relative;
   }
 
 }
-
-
 
 .header__name-and-username{
   display: flex;
@@ -406,8 +405,8 @@ position: relative;
   width: 100%;
   cursor: pointer;
   font-weight: 700;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: auto;
+  padding-right: auto;
   display: grid;
   place-items: center;
 }
@@ -488,7 +487,10 @@ position: relative;
   flex-direction: row;
   justify-content: space-between;
   padding: 10px;
+}
 
+.details summary::-webkit-details-marker {
+  display:none;
 }
 
 .display-arrow-icon{
