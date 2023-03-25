@@ -7,19 +7,22 @@ export function Footer({ className }: any) {
         <div className="footer__icons">
           <a
             href="https://www.instagram.com/benjahenleymusic/"
-            className="footer__icon-container">
+            className="footer__icon-container"
+            target="_blank">
             <InstagramIcon className="footer-icon" />
           </a>
 
           <a
             href="https://github.com/benjini123"
-            className="footer__icon-container">
+            className="footer__icon-container"
+            target="_blank">
             <GithubIcon className="footer-icon"></GithubIcon>
           </a>
 
           <a
             href="https://www.linkedin.com/in/benjamin-h-579b88146/"
-            className="footer__icon-container">
+            className="footer__icon-container"
+            target="_blank">
             <LinkedinIcon className="footer-icon"></LinkedinIcon>
           </a>
         </div>

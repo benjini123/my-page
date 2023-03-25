@@ -1,11 +1,9 @@
-import { About } from "benja/components/about";
-import { FollowButton } from "benja/components/button";
-import { Form } from "benja/components/form";
-import { Benja } from "benja/components/image";
-import { Projects } from "benja/components/projects";
-import { Skillset } from "benja/components/skillset";
-import { CakeIcon, CalendarIcon, CircleIcon, LinksIcon } from "benja/media";
-import { Navbar } from "components/navbar";
+import { About } from "components/about";
+import { FollowButton } from "components/button";
+import { Benja } from "components/image";
+import { Projects } from "components/projects";
+import { Skillset } from "components/skillset";
+import { CakeIcon, CalendarIcon, LinksIcon } from "media";
 import { useState } from "react";
 import { Feed } from "../components/feed";
 
@@ -42,7 +40,9 @@ export default function Home() {
               <div className="header__links-group ">
                 <div className="container-row gap-5">
                   <LinksIcon className="header__links-icon"></LinksIcon>
-                  <a>links</a>
+                  <a>
+                    <p>links</p>
+                  </a>
                 </div>
                 <div className="container-row gap-5">
                   <CakeIcon className="header__cake-icon"></CakeIcon>
@@ -70,13 +70,13 @@ export default function Home() {
         </ul>
         <div className="body__options-container">
           {section == "Feed" ? (
-            <Feed className="body__feed-container"></Feed>
+            <Feed></Feed>
           ) : section == "About" ? (
-            <About className="body__about-container"></About>
+            <About className="body__container"></About>
           ) : section == "Projects" ? (
             <Projects className="body__projects-container"></Projects>
           ) : section == "Skillset" ? (
-            <Skillset className="body__skillset-container"></Skillset>
+            <Skillset className="body__container"></Skillset>
           ) : (
             ""
           )}

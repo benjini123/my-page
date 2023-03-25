@@ -5,3 +5,10 @@ export function PrimaryButton(props: any) {
     </button>
   );
 }
+export function SecondaryButton(props: any) {
+  return (
+    <button onClick={props.onClick} className="secondary_button">
+      <h5>{props.children}</h5>
+    </button>
+  );
+}
