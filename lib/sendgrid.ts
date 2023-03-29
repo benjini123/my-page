@@ -1,11 +1,14 @@
-import { MailerSend, EmailParams, Sender, Recipient } from "mailersend";
-
 export async function sendMail(data: any) {
-  const mailerSend = new MailerSend({
-    apiKey: process.env.API_KEY as string,
+  const sendMail = await fetch("http://localhost:3000/api/mail", {
+    method: "post",
+    body: JSON.stringify(data),
+    headers: { "content-type": "application/json" },
   });
 
-  const sentFrom = new Sender(data.from, data.name);
-
-  const recipients = [new Recipient("benjahenley@hotmail.com", "Benja Henley")];
+  try {
+    const sendMailData = await sendMail.json();
+    console.log(sendMailData);
+  } catch (err: any) {
+    throw err.message;
+  }
 }

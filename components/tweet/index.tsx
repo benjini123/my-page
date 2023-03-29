@@ -20,7 +20,7 @@ export function Tweet(props: any) {
             <span>•</span>
             <time className="tweet__date">{props.date}</time>
           </div>
-          <p>{props.children}</p>
+          {props.children}
         </div>
       </article>
     </div>

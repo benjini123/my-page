@@ -1,9 +1,10 @@
+import { Desk } from "benja/components/desk";
 import { About } from "components/about";
 import { FollowButton } from "components/button";
 import { Benja } from "components/image";
 import { Projects } from "components/projects";
 import { Skillset } from "components/skillset";
-import { CakeIcon, CalendarIcon, LinksIcon } from "media";
+import { CakeIcon, CalendarIcon, DeskIcon, LinksIcon } from "media";
 import { useState } from "react";
 import { Feed } from "../components/feed";
 
@@ -17,7 +18,9 @@ export default function Home() {
       <div className="document">
         <header className="header">
           <div className="header__container relative">
-            <div className="header__interactive-banner"></div>
+            <div className="header__interactive-banner">
+              <Desk className="header__desk" width="140" height="140"></Desk>
+            </div>
             <div className="header__profile">
               <div className="header__profile-description">
                 <div className="header__follow-button-container">

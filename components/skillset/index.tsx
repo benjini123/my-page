@@ -1,12 +1,13 @@
 export function Skillset(props: any) {
   return (
     <div className={props.className}>
+      <h2>What i Know...</h2>
       <p className="about__description">
         Im good with Javascript and Typescript, very fond of SQL and non-SQL
         databases (firebase cloud firestore, firebase realtime database,
         postgreSQL) and a fan of React-based Next projects. I know my way around
         Heroku and Vercel. I can get an app up and running from simple layout,
-        arquitecture all the way to fully functioning web-app. Also if you
+        architecture all the way to fully functioning web-app. Also if you
         cannot already tell i'm bilingual, i speak both english and spanish
         natively
       </p>

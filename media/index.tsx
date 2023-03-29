@@ -9,6 +9,7 @@ import GithubSVG from "./github.svg";
 import InstagramSVG from "./instagram.svg";
 import LinkedinSVG from "./linkedin.svg";
 import DisplayArrowSVG from "./displayArrow.svg";
+import DeskSVG from "./desk.svg";
 
 function MenuIcon(props: any): any {
   return <MenuSVG onClick={props.onClick} className={props.className} />;
@@ -43,8 +44,13 @@ function GithubIcon(props: any): any {
 function InstagramIcon(props: any): any {
   return <InstagramSVG onClick={props.onClick} className={props.className} />;
 }
+
 function LinkedinIcon(props: any): any {
   return <LinkedinSVG onClick={props.onClick} className={props.className} />;
+}
+
+function DeskIcon(props: any): any {
+  return <DeskSVG onClick={props.onClick} className={props.className} />;
 }
 
 export {
@@ -59,4 +65,5 @@ export {
   GithubIcon,
   InstagramIcon,
   LinkedinIcon,
+  DeskIcon,
 };

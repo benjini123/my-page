@@ -6,7 +6,9 @@ export function Projects(props: any) {
     <div>
       <div className={props.className} style={props.style}>
         <Tweet date="8 jan 2023">
-          Check out my E-commerce backend complete with postman docs<br></br>
+          <p>
+            Check out my E-commerce backend complete with postman docs<br></br>
+          </p>
           <br></br>
           <SecondaryButton>
             <a
@@ -17,7 +19,9 @@ export function Projects(props: any) {
           </SecondaryButton>
         </Tweet>
         <Tweet date="12 dec 2022">
-          Check out my Pet Finder app!!<br></br>
+          <p>
+            Check out my Pet Finder app!!<br></br>
+          </p>
           <br></br>
           <SecondaryButton>
             <a href="https://dwf-m8-ded78.firebaseapp.com/" target="_blank">
