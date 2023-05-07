@@ -31,15 +31,14 @@ export function Feed(props: any) {
 
         <Tweet date="13 feb 2023">
           <p>
-            I'm currently working at an accounting studio (boring!) and i'm
-            looking for a career change. Been here for a while now, since 2018
-            (5 years, someone please save me).
+            I'm currently working at an accounting studio and i'm looking for a
+            career change. Been here for a while now, since 2018.
           </p>
         </Tweet>
 
         <Tweet date="26 jan 2023">
           <p>
-            If you would like to get in contact with me, you can fill out the
+            If you would like to get in contact with me, please fill out the
             form below!
           </p>
           <Form></Form>
